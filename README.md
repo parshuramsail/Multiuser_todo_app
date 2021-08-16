@@ -16,4 +16,4 @@
 * bootstrap
 
 ## Result
-![](result(2).png)
+![](result.png)
