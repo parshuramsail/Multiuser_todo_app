@@ -1,1 +1,1 @@
-web: gunicorn Multiuser_todo_app.wsgi
+web: gunicorn TODO_PROJECT.wsgi
