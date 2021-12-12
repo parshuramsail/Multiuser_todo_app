@@ -3,6 +3,8 @@ from django.contrib import admin
 from django.urls import path
 from todo import views
 from django.contrib.auth import views as authentication_view
+from django.conf import settings
+from django.conf.urls.static import static
 
 urlpatterns = [
     path('admin/', admin.site.urls),
@@ -16,4 +18,4 @@ urlpatterns = [
     path('add-todo/', views.add_todo),
     path('delete-todo/<int:id>', views.delete_todo),
     path('change-status/<int:id>/<str:status>', views.change_todo),
-]
+]+static(settings.STATIC_URL, document_root=settings.STATIC_ROOT)
